@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*
+{
+    --FirstGradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --SecondaryGradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: var(--FirstGradient);
+    overflow-x: hidden;
+}
+
+nav
+{
+    background: var(--FirstGradient);   
+}
+
+.form--button
+{
+    background: var(--SecondaryGradient);
+}
+
+.form--input
+{
+    background: var(--FirstGradient);
+}
+
+form
+{
+    background: var(--FirstGradient);
+}
+
+@media (min-width: 1024px)
+{
+    main
+    {
+        background: url(images/bg-pattern-desktop.svg);
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
